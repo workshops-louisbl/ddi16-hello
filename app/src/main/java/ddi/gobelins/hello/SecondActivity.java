@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -16,5 +17,8 @@ public class SecondActivity extends AppCompatActivity {
         String text = intent.getStringExtra("name");
 
         Log.d("SecondActivity", "received text through intent: " + text);
+
+        TextView textView = (TextView) findViewById(R.id.second_name);
+        textView.setText(text);
     }
 }
