@@ -1,5 +1,6 @@
 package ddi.gobelins.hello;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,5 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         String text = mainEditText.getText().toString();
         Log.d("MainActivity", "on main button clicked: " + text);
+
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
