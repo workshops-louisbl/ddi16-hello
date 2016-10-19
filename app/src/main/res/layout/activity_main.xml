@@ -10,4 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ddi.gobelins.hello.MainActivity">
 
+    <EditText
+        android:id="@+id/main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:text="@string/main_click_me"
+        android:layout_below="@id/main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
