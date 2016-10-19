@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d("MainActivity", "on main button clicked: " + text);
 
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("name", text);
         startActivity(intent);
     }
 }
